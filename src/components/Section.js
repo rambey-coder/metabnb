@@ -44,6 +44,7 @@ const Section = () => {
       {/*  */}
 
       {/* INSPIRATIONS */}
+      {/* If your working on the general front-end task. For responsive design, the mobile screens should be one in a row, the tablet should be 2 in a row, while the desktop should maintain 4in a row as in the UI Design. */}
       <div className="container">
         <div className="inspiration">
           <h1>Inspiration for your next adventure</h1>
