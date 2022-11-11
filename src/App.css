@@ -397,7 +397,7 @@ div:nth-child(3) > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 90%;
+    width: 70%;
 }
 
 .foot > div:nth-child(1) > a > img  {
@@ -537,6 +537,10 @@ div:nth-child(3) > div:nth-child(2) {
     .nft-txt > button {
         margin: 3rem auto 0 auto;
     }
+
+    .place-link {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 930px) {
@@ -549,6 +553,19 @@ div:nth-child(3) > div:nth-child(2) {
     .foot {
         flex-direction: column;
     }
+
+    .connect {
+        min-width: 315px;
+    }
+
+    .wallet > div > h3 {
+        font-size: 17px;
+    }
+
+    .wallet > div > img {
+        width: 30px;
+    }
+    
 }
 
 
@@ -569,7 +586,7 @@ div:nth-child(3) > div:nth-child(2) {
     }
 
     .nft-txt > p {
-        width: 85%;
+        width: 90%;
     }
 
     .sub-foot {
