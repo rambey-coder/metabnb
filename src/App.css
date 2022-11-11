@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
+    position: relative;
 }
 
 .nav > a > img, .foot > div:nth-child(1) > a > img  {
@@ -19,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40%;
+    width: 45%;
 }
 
 .lists > li, .place-link > li, .place-link > div > li {
@@ -44,7 +45,7 @@
   transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .8s;
 }
 
-.nav > button {
+.nav > button, .mobile-btn {
     padding: 15px 20px;
     background: #A02279;
     color: #fff;
@@ -55,9 +56,25 @@
     font-family: 'Red Rose', 'cursive';
 }
 
-.nav > button:hover {
+.nav > button:hover, .mobile-btn:hover {
     background: linear-gradient(91.47deg, #DC3E88 18.25%, #B840AE 43.34%, #843FE8 78.18%);
     transition: all cubic-bezier(0.075, 0.82, 0.165, 1) .8s;
+}
+
+.mobile-btn {
+    display: none;
+}
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger > i {
+    color: #333333;
+    font-size: 24px;
 }
 
 .connect-wallet {
@@ -226,7 +243,7 @@ div:nth-child(3) > div:nth-child(2) {
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     position: absolute;
-    right: 0;
+    right: -4px;
     top: 0;
     bottom: 0;
     cursor: pointer;
@@ -272,7 +289,7 @@ div:nth-child(3) > div:nth-child(2) {
     padding: 15px;
     border-radius: 20px;
     border: 1px solid #D7D7D7;
-
+    cursor: pointer;
 }
 
 .card > img:nth-child(1) {
@@ -434,4 +451,37 @@ div:nth-child(3) > div:nth-child(2) {
 
 .space {
     margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 960px) {
+    .lists {
+        position: absolute;
+        width: 100%;
+        backdrop-filter: blur(4px) saturate(200%);
+        background-color: rgba(197, 197, 197, 0.66);
+        flex-direction: column;
+        gap: 4rem;
+        z-index: 999;
+        padding: 20px;
+        /* top: 90px; */
+        top: -1000%;
+        left: 50%;
+        right: 0;
+        transform: translate(-50%, 0);
+        border-radius: 10px;
+        transition: cubic-bezier(.17,.67,.89,.55) all 1s;
+    }
+
+    .lists.active {
+        top: 90px;
+        transition: cubic-bezier(.17,.67,.89,.55) all 1s;
+    }
+
+    .nav > button {
+        display: none;
+    }
+
+    .mobile-btn, .hamburger {
+        display: block;
+    }
 }

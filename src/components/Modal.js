@@ -7,7 +7,9 @@ const Modal = () => {
 
   return (
     // <div className="container">
-        <div className={wallet ? "connect-wallet active" : "connect-wallet"}>
+        <div className={wallet ? "connect-wallet active" : "connect-wallet"}
+        onClick={handleClose}
+        >
         <div className="connect">
           <div>
             <h3>Connect Wallet</h3>

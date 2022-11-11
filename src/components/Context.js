@@ -10,9 +10,14 @@ export const useAppContext = () => {
 
 const ContextProvider = ({children}) => {
     const [wallet, setWallet] = useState(false)
+    const [click, setClick] = useState(false)
 
     const handleClose = () => {
         setWallet(false)
+    }
+
+    const handleClicks = () => {
+        setClick(!click)
     }
 
     const handleClick = () => {
@@ -20,7 +25,7 @@ const ContextProvider = ({children}) => {
       }
 
     return (
-        <AppContext.Provider value={{wallet, handleClick, handleClose}}>
+        <AppContext.Provider value={{wallet, handleClick, handleClose, handleClicks, click}}>
             {children}
         </AppContext.Provider>
     )
