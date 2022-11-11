@@ -1,39 +1,10 @@
 import React from 'react'
-import { useAppContext } from './Context'
+import Modal from './Modal'
 
 const Section = () => {
-  const { wallet, handleClose } = useAppContext()
   return (
     <div className="container">
-      <div className={wallet ? "connect-wallet active" : "connect-wallet"}>
-        <div className="connect">
-          <div>
-            <h3>Connect Wallet</h3>
-            <img src="/assets/close.svg" alt="close"
-             className='close' 
-             onClick={handleClose}
-             />
-          </div>
-            <div className="line"></div>
-          <div>
-            <p>Choose your preferred wallet:</p>
-            <div className="wallet">
-              <div>
-                <img src="/assets/meta-wallet.svg" alt="metamask" />
-                <h3>Metamask</h3>
-              </div>
-              <img src="/assets/arrow.svg" alt="arrow" />
-            </div>
-            <div className="wallet">
-              <div>
-                <img src="/assets/connect-wallet.svg" alt="walletConnect" />
-                <h3>WalletConnect</h3>
-              </div>
-              <img src="/assets/arrow.svg" alt="arrow" />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Modal />
     </div>
   )
 }
