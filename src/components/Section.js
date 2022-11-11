@@ -149,6 +149,21 @@ const Section = () => {
           </div>
         </div>
       </div>
+      {/* metabnb NFTs */}
+      <div className="nfts-container">
+            <div className="container flex-nfts">
+              <div className="nft-txt">
+                <h1>Metabnb NFTs</h1>
+                <p>
+                Discover our NFT gift cards collection. Loyal customers gets amazing gift cards which are traded as NFTs. These NFTs gives our cutomer access to loads of our exclusive services.
+                </p>
+                <button>Learn more</button>
+              </div>
+              <div className="nft-image">
+                <img src="/assets/section-image.png" alt="nfts" />
+              </div>
+            </div>
+          </div>
     </div>
   )
 }
