@@ -215,3 +215,20 @@ div:nth-child(3) > div:nth-child(2) {
     bottom: 0;
     cursor: pointer;
 }
+
+.icon-label {
+    background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+    padding: 14px 0;
+    margin-top: 5rem;
+    
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icon-container > img {
+    width: 160px;
+}
