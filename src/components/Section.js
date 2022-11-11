@@ -13,7 +13,7 @@ const Section = () => {
             <p>Choose your preferred wallet:</p>
             <div className="wallwet">
               <div>
-                <img src="/assets/metamask.svg" alt="metamask" />
+                <img src="/assets/meta-wallet.svg" alt="metamask" />
                 <h3>Metamask</h3>
               </div>
               <img src="/assets/arrow.svg" alt="arrow" />
