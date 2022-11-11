@@ -47,6 +47,10 @@
     font-family: 'Red Rose', 'cursive';
 }
 
+.connect-wallet {
+    display: none;
+}
+
 .connect {
     background: #fff;
     max-width: 500px;

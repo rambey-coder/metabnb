@@ -1,11 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
+import { useAppContext } from './Context'
 
 const Header = () => {
-  const [wallet, setWallet] = useState(false)
-  const handleClick = () => {
-    console.log('clk');
-  }
+
+  const {handleClick} = useAppContext()
+  
   return (
     <div className="container">
       <div className="nav">
