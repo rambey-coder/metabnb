@@ -22,7 +22,7 @@
     width: 40%;
 }
 
-.lists > li {
+.lists > li, .place-link > li, .place-link > div > li {
     list-style: none;
     cursor: pointer;
     color: #434343;
@@ -37,7 +37,7 @@
     font-size: 20px;
 }
 
-.lists > li a:hover, .lists > li:hover {
+.lists > li a:hover, .lists > li:hover, .place-link > li:hover {
     background: linear-gradient(91.47deg, #DC3E88 18.25%, #B840AE 43.34%, #843FE8 78.18%);
     background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -153,7 +153,7 @@ div:nth-child(3) > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .txt-sec {
@@ -408,4 +408,30 @@ div:nth-child(3) > div:nth-child(2) {
     font-size: 12px;
     padding: 6px 0;
     cursor: pointer;
+}
+
+.place-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+
+.place-link > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 2px solid #B4B4B4;
+    padding: 7px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.place-link > div > img {
+    width: 20px;
+}
+
+.space {
+    margin-bottom: 4rem;
 }
