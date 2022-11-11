@@ -293,6 +293,11 @@ div:nth-child(3) > div:nth-child(2) {
     cursor: pointer;
 }
 
+.card:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    transition: all 0.3s ease-out;
+}
+
 .card > img:nth-child(1) {
     width: 100%;
 }
