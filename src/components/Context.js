@@ -11,13 +11,16 @@ export const useAppContext = () => {
 const ContextProvider = ({children}) => {
     const [wallet, setWallet] = useState(false)
 
+    const handleClose = () => {
+        setWallet(false)
+    }
+
     const handleClick = () => {
-        console.log('clk');
-        setWallet()
+        setWallet(true)
       }
 
     return (
-        <AppContext.Provider value={{wallet, handleClick}}>
+        <AppContext.Provider value={{wallet, handleClick, handleClose}}>
             {children}
         </AppContext.Provider>
     )

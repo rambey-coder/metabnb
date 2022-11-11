@@ -1,13 +1,18 @@
 import React from 'react'
+import { useAppContext } from './Context'
 
 const Section = () => {
+  const { wallet, handleClose } = useAppContext()
   return (
     <div className="container">
-      <div className="connect-wallet">
+      <div className={wallet ? "connect-wallet active" : "connect-wallet"}>
         <div className="connect">
           <div>
             <h3>Connect Wallet</h3>
-            <img src="/assets/close.svg" alt="close" className='close' />
+            <img src="/assets/close.svg" alt="close"
+             className='close' 
+             onClick={handleClose}
+             />
           </div>
             <div className="line"></div>
           <div>

@@ -51,6 +51,10 @@
     display: none;
 }
 
+.connect-wallet.active {
+    display: block;
+}
+
 .connect {
     background: #fff;
     max-width: 500px;
