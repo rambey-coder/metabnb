@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
+  const [wallet, setWallet] = useState(false)
+  const handleClick = () => {
+    console.log('clk');
+  }
   return (
     <div className="container">
       <div className="nav">
@@ -23,7 +27,7 @@ const Header = () => {
           <li>Community</li>
         </div>
 
-        <button>Connect Wallet</button>
+        <button onClick={handleClick}>Connect Wallet</button>
       </div>
     </div>
   )
