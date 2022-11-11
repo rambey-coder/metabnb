@@ -19,7 +19,7 @@ const Footer = () => {
               © 2022 Metabnb
             </p>
           </div>
-
+          <div className="sub-foot">
           <div className='footer-link'>
             <h5>Community</h5>
             <ul>
@@ -49,6 +49,8 @@ const Footer = () => {
               <li>Contact us</li>
             </ul>
           </div>
+          </div>
+          
         </div>
       </div>
     </div>
