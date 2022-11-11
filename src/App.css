@@ -26,14 +26,21 @@
     cursor: pointer;
     color: #434343;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .lists > li a {
     text-decoration: none;
     color: #434343;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+.lists > li a:hover, .lists > li:hover {
+    background: linear-gradient(91.47deg, #DC3E88 18.25%, #B840AE 43.34%, #843FE8 78.18%);
+    background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all .7s ease;
 }
 
 .nav > button {
@@ -41,10 +48,15 @@
     background: #A02279;
     color: #fff;
     border: 0;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
     font-weight: 500;
     font-family: 'Red Rose', 'cursive';
+}
+
+.nav > button:hover {
+    background: linear-gradient(91.47deg, #DC3E88 18.25%, #B840AE 43.34%, #843FE8 78.18%);
+    transition: .9s all ease;
 }
 
 .connect-wallet {
@@ -176,6 +188,10 @@ div:nth-child(3) > div:nth-child(2) {
     background: #F7F7F71A;
     color: #333333;
     font-weight: 600;
+}
+
+.inpts > input:nth-child(1):focus {
+    border-color: #B840AE;
 }
 
 ::placeholder {
