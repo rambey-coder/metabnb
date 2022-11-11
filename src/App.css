@@ -1,0 +1,48 @@
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.nav > a > img {
+    width: 150px;
+}
+
+.lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.lists > li {
+    list-style: none;
+    cursor: pointer;
+    color: #434343;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.lists > li a {
+    text-decoration: none;
+    color: #434343;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.nav > button {
+    padding: 15px 20px;
+    background: #A02279;
+    color: #fff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    font-family: 'Red Rose', 'cursive';
+}
