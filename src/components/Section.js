@@ -1,13 +1,17 @@
 import React from 'react'
 import Modal from './Modal'
+import { useAppContext } from './Context'
 
 const Section = () => {
+  const { handleClicks, click } = useAppContext()
   return (
     <div>
       <Modal />
       <div className="container">
         {/* HERRO-SECTION */}
-        <div className="section">
+        <div 
+        onClick={handleClicks}
+        className={click ? "section active" : "section"}>
           <div className="txt-sec">
             <h1>
               Rent a <span>Place</span> away from <span>Home</span> in the <span>Metaverse</span>

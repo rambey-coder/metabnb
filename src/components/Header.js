@@ -9,7 +9,9 @@ const Header = () => {
   return (
     <div className={nav ? "nav-bar active" : "nav-bar"}>
     <div className="container">
-      <div className="nav">
+      <div 
+      onClick={handleClicks}
+      className={click ? "nav active" : "nav"}>
        <Link to='/'>
         <img src="/assets/meta-logo.svg" alt="logo" />
        </Link>
@@ -35,7 +37,8 @@ const Header = () => {
           onClick={handleClicks}
           >Community</li>
 
-          <button onClick={handleClick} className='mobile-btn'>Connect Wallet</button>
+          <button onClick={handleClick} 
+          className={click ? 'mobile-btn active' : 'mobile-btn'}>Connect Wallet</button>
         </div>
 
         <button onClick={handleClick}>Connect Wallet</button>

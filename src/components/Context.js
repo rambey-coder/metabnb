@@ -15,7 +15,7 @@ const ContextProvider = ({children}) => {
 
 
     window.addEventListener('scroll', () => {
-        if(window.scrollY >= 60) {
+        if(window.scrollY >= 50) {
             setNav(true)
         } else {
             setNav(false)
@@ -24,6 +24,9 @@ const ContextProvider = ({children}) => {
 
     const handleClose = () => {
         setWallet(false)
+        if(wallet === true) {
+            document.querySelector('body').style.overflow = 'scroll'
+        }
     }
 
     const handleClicks = () => {
@@ -32,6 +35,13 @@ const ContextProvider = ({children}) => {
 
     const handleClick = () => {
         setWallet(true)
+        setClick(!click)
+        window.scrollTo({top: 0, behavior: 'smooth'})
+
+        if (wallet === false) {
+            console.log('open');
+            document.querySelector('body').style.overflow = 'hidden'
+        }
       }
 
     return (
