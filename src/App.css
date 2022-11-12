@@ -110,7 +110,7 @@
 .connect {
     background: #fff;
     max-width: 500px;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 15px;
     filter: drop-shadow(1px 1px 8px #e9e9e942);
     position: absolute;
