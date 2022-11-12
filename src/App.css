@@ -496,6 +496,7 @@ div:nth-child(3) > div:nth-child(2) {
         height: 70vh;
         opacity: 0;
         background: #fff;
+        filter: drop-shadow(1px 1px 8px #9c9b9bc5);
         flex-direction: column;
         gap: 4rem;
         z-index: 999;
