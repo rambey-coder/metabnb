@@ -15,7 +15,7 @@ const ContextProvider = ({children}) => {
 
 
     window.addEventListener('scroll', () => {
-        if(window.scrollY >= 90) {
+        if(window.scrollY >= 60) {
             setNav(true)
         } else {
             setNav(false)

@@ -493,13 +493,15 @@ div:nth-child(3) > div:nth-child(2) {
     .lists {
         position: absolute;
         width: 90%;
-        backdrop-filter: blur(6px) saturate(200%);
-        background-color: rgba(255, 255, 255, 0.575);
+        height: 70vh;
+        opacity: 0;
+        background: #fff;
         flex-direction: column;
         gap: 4rem;
         z-index: 999;
         padding: 20px;
-        top: -1000%;
+        top: 90px;
+        display: none;
         left: 50%;
         right: 0;
         transform: translate(-50%, 0);
@@ -508,7 +510,8 @@ div:nth-child(3) > div:nth-child(2) {
     }
 
     .lists.active {
-        top: 68px;
+        display: flex;
+        opacity: 1;
         transition: cubic-bezier(.17,.67,.89,.55) all 1s;
     }
 
