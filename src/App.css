@@ -4,12 +4,25 @@
     position: relative;
 }
 
+.nav-bar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+}
+
 .nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 30px 0;
+    padding: 20px 0;
     position: relative;
+}
+
+.nav-bar.active {
+    backdrop-filter: blur(7px) saturate(200%);
+    background-color: rgba(255, 255, 255, 0.575);
 }
 
 .nav > a > img, .foot > div:nth-child(1) > a > img  {
@@ -170,7 +183,7 @@ div:nth-child(3) > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 .txt-sec {
@@ -447,7 +460,7 @@ div:nth-child(3) > div:nth-child(2) {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 6rem;
+    margin-top: 10rem;
     margin-bottom: 2rem;
 }
 
@@ -480,13 +493,12 @@ div:nth-child(3) > div:nth-child(2) {
     .lists {
         position: absolute;
         width: 90%;
-        backdrop-filter: blur(4px) saturate(200%);
+        backdrop-filter: blur(6px) saturate(200%);
         background-color: rgba(255, 255, 255, 0.575);
         flex-direction: column;
         gap: 4rem;
         z-index: 999;
         padding: 20px;
-        /* top: 90px; */
         top: -1000%;
         left: 50%;
         right: 0;
@@ -496,7 +508,7 @@ div:nth-child(3) > div:nth-child(2) {
     }
 
     .lists.active {
-        top: 90px;
+        top: 68px;
         transition: cubic-bezier(.17,.67,.89,.55) all 1s;
     }
 
@@ -510,7 +522,7 @@ div:nth-child(3) > div:nth-child(2) {
 
     .section {
         flex-direction: column;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     .flex-nfts {
@@ -545,6 +557,10 @@ div:nth-child(3) > div:nth-child(2) {
 
     .place-link {
         display: none;
+    }
+
+    .space {
+        margin-top: 5rem;
     }
 }
 
@@ -587,7 +603,7 @@ div:nth-child(3) > div:nth-child(2) {
 
 @media screen and (max-width: 500px) {
     .txt-sec h1, .inspiration h1, .nft-txt h1 {
-        font-size: 35px;
+        font-size: 34px;
     }
 
     .nft-txt > p {

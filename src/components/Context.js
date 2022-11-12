@@ -11,6 +11,16 @@ export const useAppContext = () => {
 const ContextProvider = ({children}) => {
     const [wallet, setWallet] = useState(false)
     const [click, setClick] = useState(false)
+    const [nav, setNav] = useState(false)
+
+
+    window.addEventListener('scroll', () => {
+        if(window.scrollY >= 90) {
+            setNav(true)
+        } else {
+            setNav(false)
+        }
+    })
 
     const handleClose = () => {
         setWallet(false)
@@ -25,7 +35,14 @@ const ContextProvider = ({children}) => {
       }
 
     return (
-        <AppContext.Provider value={{wallet, handleClick, handleClose, handleClicks, click}}>
+        <AppContext.Provider 
+        value={{wallet, handleClick, 
+        handleClose, 
+        handleClicks, 
+        click,
+        nav,
+        }}
+        >
             {children}
         </AppContext.Provider>
     )

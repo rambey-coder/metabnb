@@ -4,9 +4,10 @@ import { useAppContext } from './Context'
 
 const Header = () => {
 
-  const { handleClick, handleClicks, click } = useAppContext()
+  const { handleClick, handleClicks, click, nav } = useAppContext()
   
   return (
+    <div className={nav ? "nav-bar active" : "nav-bar"}>
     <div className="container">
       <div className="nav">
        <Link to='/'>
@@ -43,6 +44,7 @@ const Header = () => {
           <i className={click ? "fa-solid fa-times" : "fa-solid fa-bars"}></i>
         </div>
       </div>
+    </div>
     </div>
   )
 }
