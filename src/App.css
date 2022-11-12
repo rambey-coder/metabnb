@@ -286,7 +286,7 @@ div:nth-child(3) > div:nth-child(2) {
 .card {
     width: 21%;
     background: #fff;
-    filter: drop-shadow(1px 1px 8px #cecdcd8e);
+    filter: drop-shadow(1px 1px 8px #bbb9b9c3);
     padding: 15px;
     border-radius: 20px;
     border: 1px solid #D7D7D7;
