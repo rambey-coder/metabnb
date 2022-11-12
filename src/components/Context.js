@@ -39,7 +39,6 @@ const ContextProvider = ({children}) => {
         window.scrollTo({top: 0, behavior: 'smooth'})
 
         if (wallet === false) {
-            console.log('open');
             document.querySelector('body').style.overflow = 'hidden'
         }
       }
