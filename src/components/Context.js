@@ -22,8 +22,9 @@ const ContextProvider = ({children}) => {
         }
     })
 
-    const handleClose = () => {
+    const handleClose = (e) => {
         setWallet(false)
+
         if(wallet === true) {
             document.querySelector('body').style.overflow = 'scroll'
         }
@@ -35,8 +36,10 @@ const ContextProvider = ({children}) => {
 
     const handleClick = () => {
         setWallet(true)
+
         setClick(!click)
-        window.scrollTo({top: 0, behavior: 'smooth'})
+
+        window.scrollTo({top: 0, behavior: 'smooth', duration: 500})
 
         if (wallet === false) {
             document.querySelector('body').style.overflow = 'hidden'

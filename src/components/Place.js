@@ -1,7 +1,10 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import Modal from './Modal'
 
 const Place = () => {
+  useEffect(() => {
+    window.scrollTo({top: 0, behavior: 'smooth', duration: 500})
+  }, [])
   return (
     <div>
     <Modal />

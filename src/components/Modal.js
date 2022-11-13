@@ -10,7 +10,9 @@ const Modal = () => {
         <div className={wallet ? "connect-wallet active" : "connect-wallet"}
         onClick={handleClose}
         >
-        <div className="connect">
+        <div className="connect"
+        onClick={(e) => e.stopPropagation()}
+        >
           <div>
             <h3>Connect Wallet</h3>
             <img src="/assets/close.svg" alt="close"

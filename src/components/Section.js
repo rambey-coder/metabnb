@@ -1,8 +1,11 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import Modal from './Modal'
 import { useAppContext } from './Context'
 
 const Section = () => {
+  useEffect(() => {
+    window.scrollTo({top: 0, behavior: 'smooth', duration: 500})
+  }, [])
   const { handleClicks, click } = useAppContext()
   return (
     <div>
