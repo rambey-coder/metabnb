@@ -9,9 +9,7 @@ const Header = () => {
   return (
     <div className={nav ? "nav-bar active" : "nav-bar"}>
     <div className="container">
-      <div 
-      onClick={handleClicks}
-      className={click ? "nav active" : "nav"}>
+      <div className='nav'>
        <Link to='/'>
         <img src="/assets/meta-logo.svg" alt="logo" />
        </Link>

@@ -463,8 +463,8 @@ div:nth-child(3) > div:nth-child(2) {
 .place-link {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    margin-top: 5rem;
+    justify-content: space-between;
+    margin-top: 8rem;
     margin-bottom: 2rem;
 }
 
@@ -565,6 +565,7 @@ div:nth-child(3) > div:nth-child(2) {
 
     .place-link {
         flex-wrap: wrap;
+        justify-content: flex-start;
         gap: 1.5rem;
     }
 
