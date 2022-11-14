@@ -624,6 +624,7 @@ div:nth-child(3) > div:nth-child(2) {
     .sub-foot {
         flex-direction: column;
         gap: 4rem;
+        text-align: center;
     }
 
     .foot {
